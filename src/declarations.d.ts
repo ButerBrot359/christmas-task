@@ -1,3 +1,5 @@
 declare module '*.png'
 declare module '*.svg'
 declare module '*.tsx'
+declare module '*.jpg'
+declare module '*.mp3'

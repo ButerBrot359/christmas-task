@@ -1,0 +1,14 @@
+.tree-history {
+  margin-top: 20px;
+  .decorated-trees {
+    display: flex;
+    width: 350px;
+    overflow-x: auto;
+    .your-tree {
+      width: 115px;
+      height: 115px;
+      background-color: black;
+      border-radius: 10px;
+    }
+  }
+}

@@ -37,10 +37,14 @@ module.exports = {
         test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
         type: 'asset/inline',
       },
+      {
+        test: /\.mp3$/,
+        loader: 'file-loader'
+      }
     ],
   },
   output: {
-    path: path.resolve(__dirname, '.'),
+    path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
   },
   plugins: [

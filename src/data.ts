@@ -1,12 +1,14 @@
 export interface IBallType {
-    num: string
-    name: string
-    count: string
-    year: string
-    shape: string
-    color: string
-    size: string
-    favorite: boolean
+  [x: string]: any
+  num: string
+  name: string
+  count: string
+  year: string
+  shape: string
+  color: string
+  size: string
+  favorite: boolean
+  select?: boolean
 }
 
 export interface IFilter {
@@ -14,8 +16,26 @@ export interface IFilter {
   colors: string[]
   shapes: string[]
   favorites: boolean
-  amount?: number[]
-  year?: number[]
+  amount?: string[]
+  year?: string[]
+  sort?: string
+  search: string
+}
+
+export interface IShpClrSz {
+  ball?: boolean
+  bell?: boolean
+  cone?: boolean
+  snowflake?: boolean
+  toy?: boolean
+  red?: boolean
+  green?: boolean
+  yellow?: boolean
+  white?: boolean
+  blue?: boolean
+  big?: boolean
+  middle?: boolean
+  small?: boolean
 }
 export const data: IBallType[] = [
   {
